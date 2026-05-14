@@ -30,7 +30,11 @@
             }
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
         
         body {
             font-family: var(--font-sans);
@@ -161,9 +165,18 @@
         }
         
         @media (max-width: 640px) {
-            body { padding: 1rem 0.5rem; }
-            .container { padding: 1.5rem; }
-            .footer { flex-direction: column; gap: 1rem; }
+            body { 
+                padding: 1rem 0.5rem; 
+            }
+
+            .container { 
+                padding: 1.5rem; 
+            }
+
+            .footer { 
+                flex-direction: column; 
+                gap: 1rem; 
+            }
         }
     </style>
 </head>
@@ -173,17 +186,50 @@
         <p class="subtitle">Freelance Data Visualiser · Berlin</p>
         
         <div class="projects">
+
+            <!-- NEW TOP PROJECT -->
             <div class="project">
-                <img src="visa-divide.png" alt="The Global Mobility Divide visualization" class="project-image">
+                <img src="visa-divide.png" alt="The Global Mobility Divide map view" class="project-image">
                 <div class="project-content">
                     <p class="project-meta">2026</p>
-                    <h2 class="project-title">The Global Mobility Divide</h2>
-                    <p class="project-desc">How visa-free travel rights diverged between OECD and African nations from 1969 to 2010.</p>
+                    <h2 class="project-title">The Global Mobility Divide — Map View</h2>
+                    <p class="project-desc">
+                        An animated map showing how visa-free travel rights shifted across countries from 1969 to 2010.
+                    </p>
+
                     <div class="tags">
                         <span class="tag">maps</span>
                         <span class="tag">Python</span>
                         <span class="tag">HTML</span>
                     </div>
+
+                    <a href="visa_divide_map.html" target="_blank" class="project-link">
+                        View piece 
+                        <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15,3 21,3 21,9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SECOND PROJECT -->
+            <div class="project">
+                <img src="visa-divide.png" alt="The Global Mobility Divide bar chart animation" class="project-image">
+                <div class="project-content">
+                    <p class="project-meta">2026</p>
+                    <h2 class="project-title">The Global Mobility Divide</h2>
+                    <p class="project-desc">
+                        A bar-chart animation showing how visa-free travel rights diverged between OECD and African nations from 1969 to 2010.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">charts</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">HTML</span>
+                    </div>
+
                     <a href="https://chiragdxb05.github.io/visa-divide-project/article_short_vf.html" target="_blank" class="project-link">
                         View piece 
                         <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -194,18 +240,23 @@
                     </a>
                 </div>
             </div>
-            
+
+            <!-- THIRD PROJECT -->
             <div class="project">
                 <img src="visa-appointments.png" alt="German Visa Appointment Wait Times visualization" class="project-image">
                 <div class="project-content">
                     <p class="project-meta">2026</p>
                     <h2 class="project-title">German Visa Appointment Wait Times</h2>
-                    <p class="project-desc">Interactive scatter chart exploring visa appointment availability and wait times across countries.</p>
+                    <p class="project-desc">
+                        Interactive scatter chart exploring visa appointment availability and wait times across countries.
+                    </p>
+
                     <div class="tags">
                         <span class="tag">interactive</span>
                         <span class="tag">Python</span>
                         <span class="tag">HTML</span>
                     </div>
+
                     <a href="https://chiragdxb05.github.io/German-visa-appointment-wait-times/" target="_blank" class="project-link">
                         View piece 
                         <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -216,18 +267,23 @@
                     </a>
                 </div>
             </div>
-            
+
+            <!-- FOURTH PROJECT -->
             <div class="project">
                 <img src="heat-analysis.png" alt="2025 Heat Analysis visualization" class="project-image">
                 <div class="project-content">
                     <p class="project-meta">2026</p>
                     <h2 class="project-title">2025 Heat Analysis</h2>
-                    <p class="project-desc">Examining heat patterns and wet-bulb temperature trends across cities using processed climate data.</p>
+                    <p class="project-desc">
+                        Examining heat patterns and wet-bulb temperature trends across cities using processed climate data.
+                    </p>
+
                     <div class="tags">
                         <span class="tag">charts</span>
                         <span class="tag">R</span>
                         <span class="tag">HTML</span>
                     </div>
+
                     <a href="https://chiragdxb05.github.io/heat-wet-bulb-city-comparison/heat_piece.html" target="_blank" class="project-link">
                         View piece 
                         <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -238,11 +294,17 @@
                     </a>
                 </div>
             </div>
+
         </div>
         
         <div class="footer">
-            <a href="https://github.com/chiragdxb05" target="_blank">github.com/chiragdxb05</a>
-            <a href="mailto:chiragdxb05@gmail.com">chiragdxb05@gmail.com</a>
+            <a href="https://github.com/chiragdxb05" target="_blank">
+                github.com/chiragdxb05
+            </a>
+
+            <a href="mailto:chiragdxb05@gmail.com">
+                chiragdxb05@gmail.com
+            </a>
         </div>
     </div>
 </body>
