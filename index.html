@@ -75,14 +75,20 @@
         }
 
         .project {
+            display: block;
             border: 0.5px solid var(--color-border-tertiary);
             border-radius: var(--border-radius-lg);
             overflow: hidden;
-            transition: border-color 0.2s;
+            transition:
+                border-color 0.2s,
+                transform 0.2s;
+            text-decoration: none;
+            color: inherit;
         }
 
         .project:hover {
             border-color: var(--color-border-secondary);
+            transform: translateY(-2px);
         }
 
         .project-image {
@@ -119,7 +125,6 @@
             display: flex;
             gap: 6px;
             flex-wrap: wrap;
-            margin-bottom: 1rem;
         }
 
         .tag {
@@ -128,19 +133,6 @@
             border-radius: var(--border-radius-md);
             background: var(--color-background-secondary);
             color: var(--color-text-secondary);
-        }
-
-        .project-link {
-            font-size: 14px;
-            color: var(--color-text-info);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .project-link:hover {
-            text-decoration: underline;
         }
 
         .footer {
@@ -161,12 +153,6 @@
 
         .footer a:hover {
             text-decoration: underline;
-        }
-
-        .external-icon {
-            width: 14px;
-            height: 14px;
-            opacity: 0.7;
         }
 
         @media (max-width: 640px) {
@@ -195,7 +181,11 @@
         <div class="projects">
 
             <!-- PROJECT 1 -->
-            <div class="project">
+            <a
+                class="project"
+                href="https://chiragdxb05.github.io/visa-divide-project/visa_divide_map.html"
+                target="_blank"
+            >
                 <img
                     src="visa-divide_map.png"
                     alt="The Global Mobility Divide map view"
@@ -219,38 +209,18 @@
                         <span class="tag">Python</span>
                         <span class="tag">HTML</span>
                     </div>
-
-                    <a
-                        href="https://chiragdxb05.github.io/visa-divide-project/visa_divide_map.html"
-                        target="_blank"
-                        class="project-link"
-                    >
-                        View piece
-
-                        <svg
-                            class="external-icon"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path
-                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                            ></path>
-
-                            <polyline points="15,3 21,3 21,9"></polyline>
-
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                    </a>
                 </div>
-            </div>
+            </a>
 
             <!-- PROJECT 2 -->
-            <div class="project">
+            <a
+                class="project"
+                href="https://chiragdxb05.github.io/visa-divide-project/Visa_Divide_OECD_Africa.html"
+                target="_blank"
+            >
                 <img
                     src="visa-divide_graph.png"
-                    alt="The Global Mobility Divide bar graph animation"
+                    alt="OECD vs Africa: The Mobility Divide"
                     class="project-image"
                 />
 
@@ -258,12 +228,12 @@
                     <p class="project-meta">2026</p>
 
                     <h2 class="project-title">
-                        The Global Mobility Divide
+                        OECD vs Africa: The Mobility Divide
                     </h2>
 
                     <p class="project-desc">
                         A bar-chart animation showing how visa-free travel rights
-                        diverged between OECD and African nations from 1969 to 2010.
+                        diverged between OECD and African nations from 1969 to 2013.
                     </p>
 
                     <div class="tags">
@@ -271,35 +241,15 @@
                         <span class="tag">Python</span>
                         <span class="tag">HTML</span>
                     </div>
-
-                    <a
-                        href="https://chiragdxb05.github.io/visa-divide-project/Visa_Divide_OECD_Africa.html"
-                        target="_blank"
-                        class="project-link"
-                    >
-                        View piece
-
-                        <svg
-                            class="external-icon"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path
-                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                            ></path>
-
-                            <polyline points="15,3 21,3 21,9"></polyline>
-
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                    </a>
                 </div>
-            </div>
+            </a>
 
             <!-- PROJECT 3 -->
-            <div class="project">
+            <a
+                class="project"
+                href="https://chiragdxb05.github.io/German-visa-appointment-wait-times/"
+                target="_blank"
+            >
                 <img
                     src="visa-appointments.png"
                     alt="German Visa Appointment Wait Times visualization"
@@ -323,35 +273,15 @@
                         <span class="tag">Python</span>
                         <span class="tag">HTML</span>
                     </div>
-
-                    <a
-                        href="https://chiragdxb05.github.io/German-visa-appointment-wait-times/"
-                        target="_blank"
-                        class="project-link"
-                    >
-                        View piece
-
-                        <svg
-                            class="external-icon"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path
-                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                            ></path>
-
-                            <polyline points="15,3 21,3 21,9"></polyline>
-
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                    </a>
                 </div>
-            </div>
+            </a>
 
             <!-- PROJECT 4 -->
-            <div class="project">
+            <a
+                class="project"
+                href="https://chiragdxb05.github.io/heat-wet-bulb-city-comparison/heat_piece.html"
+                target="_blank"
+            >
                 <img
                     src="heat-analysis.png"
                     alt="2025 Heat Analysis visualization"
@@ -375,32 +305,8 @@
                         <span class="tag">R</span>
                         <span class="tag">HTML</span>
                     </div>
-
-                    <a
-                        href="https://chiragdxb05.github.io/heat-wet-bulb-city-comparison/heat_piece.html"
-                        target="_blank"
-                        class="project-link"
-                    >
-                        View piece
-
-                        <svg
-                            class="external-icon"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path
-                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                            ></path>
-
-                            <polyline points="15,3 21,3 21,9"></polyline>
-
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                    </a>
                 </div>
-            </div>
+            </a>
 
         </div>
 
